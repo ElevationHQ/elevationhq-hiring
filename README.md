@@ -1,41 +1,39 @@
 # elevationhq-hiring
 -----------
 
-name: Walk-In Applicant
-description: Log a new walk-in job applicant for Elevation HQ
+name: "Walk-In Applicant"
+description: "Log a new walk-in job applicant for Elevation HQ"
 title: "[Applicant] Full Name Here"
 labels: ["applicant", "walk-in"]
-assignees: []
-
 body:
   - type: input
-    id: full-name
+    id: full_name
     attributes:
-      label: Full Name
-      placeholder: e.g. John Doe
+      label: "Full Name"
+      placeholder: "e.g. John Doe"
     validations:
       required: true
 
   - type: input
     id: phone
     attributes:
-      label: Phone Number
-      placeholder: e.g. (123) 456-7890
+      label: "Phone Number"
+      placeholder: "e.g. (123) 456-7890"
     validations:
       required: true
 
   - type: input
     id: email
     attributes:
-      label: Email
-      placeholder: e.g. john@example.com
+      label: "Email"
+      placeholder: "e.g. john@example.com"
     validations:
       required: true
 
   - type: dropdown
     id: availability
     attributes:
-      label: Availability
+      label: "Availability"
       options:
         - Morning
         - Night
@@ -46,7 +44,7 @@ body:
   - type: dropdown
     id: role
     attributes:
-      label: Interested Role
+      label: "Interested Role"
       multiple: true
       options:
         - Budtending
@@ -61,7 +59,7 @@ body:
   - type: dropdown
     id: resume
     attributes:
-      label: Resume Provided?
+      label: "Resume Provided?"
       options:
         - Yes - attached to this issue
         - No - will email to elevationhq701@gmail.com
